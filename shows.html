@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+        <link rel="stylesheet" href="style.css"/>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Reenie+Beanie&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <title>FoundLand Musical | Shows</title>
+    </head>
+
+    <body>
+        <!-- Header -->
+        <section class="shows-header">
+            <nav>
+                <a href="index.html"><img src="images/logo/cube.png"></a>
+                <div class="nav-links" id="navLinks">
+                    <i class="fa fa-times" onclick="hideMenu()"></i>
+                    <ul>
+                        <li><a href="index.html">HOME</a></li>
+                        <li><a href="shows.html">SHOWS</a></li>
+                        <li><a href="about.html">ABOUT</a></li>
+                        <li><a href="contact.html">CONTACT</a></li>
+                        <li><a href="joinus.html">JOIN US</a></li>
+                    </ul>
+                </div>
+                <i class="fa fa-bars" onclick="showMenu()"></i>
+            </nav>
+
+            <div class="title">
+                <h1>OUR SHOWS</h1>
+            </div>
+
+            <div class="icons">
+                <a href="https://www.youtube.com/@foundlandmusical_uwmadison2021"><i class="fa fa-youtube-play"></i></a>
+                <a href="https://instagram.com/foundlandmusical_uwmadison?igshid=YTQwZjQ0NmI0OA=="><i class="fa fa-instagram"></i></a>
+                <a href="https://mp.weixin.qq.com/s/iESr0ppFC4_Vs8DGrX5yzA"><i class="fa fa-weixin"></i></a>
+            </div>
+        </section>
+
+        <section class="shows-intro">
+            <p class="left">During the spring of 2022, our board members gathered and watched a original Chinese musical <b>"An Endless Poetry"</b>.</p>
+            <p class="right">They were so moved by the emotions and the themes of this musical and decided to re-create it.</p>
+            <p class="left">Fall of that year, we successfully put on the show on our stage in Wisconsin,</p>
+            <p class="right">and it was an incredible experience for all of our crew.</p>
+            <p class="left">So, we are now planning to have a production every academic year,</p>
+            <p class="right">either adapted or original, either Broadway or pop music,</p>
+            <p class="left">we will be giving our all to provide the best theatre experience for musical ethusiasts from all over the world.</p>
+        </section>
+
+        <section class="all-shows">
+            <div class="shows-col">
+                <div class="shows-row">
+                    <div class="layer">
+                        <a href="poet.html">
+                            <h2>An Endless Poetry</h2>
+                            <p>"You are the banners I left to the world"</p>
+                            <i class="fa fa-angle-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- JavaScript for Menu Toggle -->
+        <script>
+            var navLinks = document.getElementById("navLinks")
+
+            function hideMenu() {
+                navLinks.style.right = "-200px";
+            }
+
+            function showMenu() {
+                navLinks.style.right = "0";
+            }
+        </script>
+    </body>
+</html>
